@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* a{
+    text-decoration:none;
+}
+* li{
+    list-style: none;
+}
+.container{
+    position: relative;
+    min-height: 100vh; 
+}
+.bg{
+    width:100% ;
+    height: 100%;
+    position: relative;
+}
+.bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url(Laem-Sing-Beach.jpg) ;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+}
+.menu{
+    position: relative;
+    width: 85%;
+    height: 15vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a {
+    font-size: 2rem;
+    color:white;
+    }
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+.menu ul li{
+    padding: 0 17px;
+}
+.menu ul li a {
+    font-weight:bold ;
+    color: white;
+    font-size: 14px;
+
+}
+
+
+.content{
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.content .header,.grid-card{
+    width: 50%;
+    position: relative;
+}
+.content .header{
+    color: white;
+    padding: 20px;
+}
+.content .header h3{
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+}
+.content .header h3 i{
+    color: orange;
+}
+.content .header h1{
+    font-size: 5rem;
+}
+.content .header p{
+    opacity: .6;
+}
+.grid-card{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+}
+.grid-card .box{
+    width: 100%;
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    
+    position: relative;
+}
+.bg1{
+    background-image: url(moutain.jpg);
+}
+.bg2{
+    background-image: url(beach.jpg);
+}
+.bg3{
+    background-image: url(temple.jpg);
+}
+.bg4{
+    background-image: url(s.jpg);
+}
+.content .box h2{
+    position:absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+}
+.content .box:hover{
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.header button{
+    border: solid lpx white ;
+    background: none;
+    color: white;
+    font-size: 2.5rem;
+    padding: 5px 15px;
+    margin: 15px 0;
+}
+.header button:hover{
+    background: white;
+    color: black;
+}
